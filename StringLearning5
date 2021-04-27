@@ -1,0 +1,14 @@
+public class StringLearning5 {
+
+	public static void main(String[] args) {
+	String s = "ABCDEFGHIJKMNOPQRSTUVWXYZ";
+	System.out.println( s.contains("BCD"));
+	System.out.println( s.contains("bcd"));
+	System.out.println( s.contains("DFE"));
+	String ss = "vidya saratha ajay murugan";
+	
+System.out.println("it ends with "+ss.endsWith("murugan"));
+System.out.println("it starts with "+ss.startsWith("vidya"));
+	}
+
+}
