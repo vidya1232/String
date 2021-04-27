@@ -1,0 +1,54 @@
+public class StringLearning6 {
+
+	private static String s;
+
+	public static void main(String[] args) {
+	s = "vidya murugan";
+StringLearning6 sl = new StringLearning6();
+sl.confirmStarting("vidya");
+sl.confirmending("murugan");
+	}
+
+	private void confirmending(String appa) {
+	System.out.println(s.length());
+	System.out.println(appa.length());
+	System.out.println(s.length()-appa.length());
+	int start = s.length()-appa.length();
+	int j=0;
+	int count =0;
+	for(int i=start;i<s.length();i++)
+	{
+	if(s.charAt(i)==appa.charAt(j))	
+	{
+		count++;
+	}
+	  j++; 
+	}
+	System.out.println(count);
+	if(count==appa.length())
+	{
+		System.out.println("yes the string ends with "+appa);
+	}
+	}
+
+	private void confirmStarting(String name) {
+		String s ="vidya murugan";
+		int count =0;
+		
+		for(int i=0;i<name.length();i++)
+		{
+			if(name.charAt(i)==s.charAt(i))
+			{
+				count++;
+			}
+			
+		}
+		System.out.println(count);
+		if(name.length()==count)
+		{
+			System.out.println("yes the given string with"+name);
+		}
+		
+	}
+
+}
