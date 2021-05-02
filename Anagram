@@ -1,0 +1,33 @@
+package vidya;
+
+import java.util.Arrays;
+
+public class Anagram {
+
+	public static void main(String[] args) {
+	String ss1="Brag";
+	String ss2="Grab";
+	ss1=ss1.toLowerCase();
+	ss2=ss2.toLowerCase();
+	if(ss1.length()!=ss2.length())
+	{
+		System.out.println("both string are not anagram");
+	}
+	else
+	{
+		char[] aa1 = ss1.toCharArray();
+		char[]aa2 = ss2.toCharArray();
+		Arrays.sort(aa1);
+		Arrays.sort(aa2);
+		if(Arrays.equals(aa1, aa2)==true)
+		{
+			System.out.println("it is anagram");
+		}
+		else
+			System.out.println("it is not anagram");
+		
+		
+	}
+	}
+
+}
