@@ -1,0 +1,21 @@
+public class Countvowel {
+
+	public static void main(String[] args) {
+		int countvowel=0,countconsonant=0;
+		String ss ="life is onces make it yours";
+		for(int i=0;i<ss.length();i++)
+		{
+if(ss.charAt(i)=='a'||ss.charAt(i)=='e'||ss.charAt(i)=='i'||ss.charAt(i)=='o'||ss.charAt(i)=='u')
+{
+	countvowel++;
+}
+else if(ss.charAt(i)>='a'&&ss.charAt(i)<='z')
+{
+	countconsonant++;
+}
+
+	}
+		System.out.println("the number of vowel are"+ countvowel);
+		System.out.println("the number of consonant are"+ countconsonant);
+}
+}
