@@ -1,0 +1,37 @@
+public class Sub {
+static String s = "vidya murugan";
+static char[] c = s.toCharArray();
+static char []a = new char[c.length];
+public static void main(String[] args) {
+		for(int i=0;i<c.length;i++)
+		{if(c[i]==' ')
+		{
+			i=i+1;
+			System.out.println(i);
+		callmethod(i,0,c.length);
+		System.out.println(a);
+		break;
+		}
+		}
+}
+static void callmethod(int i, int j, int length) {
+		if(i<length)
+		{
+			a[j]=c[i];
+			
+			callmethod(i+1,j+1,length);	
+		}
+		else
+		{
+			if(j<length)
+			{
+				callmethod(0,j+1,i-(j+1));	
+			}
+		
+	
+		
+		
+	}
+	
+}
+}
