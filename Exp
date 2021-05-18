@@ -1,0 +1,24 @@
+public class Exp {
+
+	public static void main(String[] args) {
+	Exp a = new Exp();
+	a.divide(100,0);
+
+	}
+
+public void divide(int i, int j)
+	{
+	try
+	{
+		int result =i/j;
+		System.out.println(result);
+		
+	}
+	catch(ArithmeticException ae)
+	{
+		System.out.println(ae.getMessage());
+		System.out.println("enter divisor other than zero");
+	}
+	}
+
+}
