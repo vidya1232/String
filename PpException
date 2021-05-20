@@ -1,0 +1,17 @@
+public class PpException {
+
+	public static void main(String[] args) {
+		PasswordException pe = new PasswordException();
+		
+			
+				try {
+					pe.verifypassword("vidya");
+				} catch (PasswordException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+					
+		
+	}
+
+}
